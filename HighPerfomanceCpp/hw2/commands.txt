@@ -1,0 +1,18 @@
+CHANGE DIRECTORY:
+cd hw2
+
+GENERATE TEST:
+python3 tests/generate_test.py
+
+COMPILE:
+g++ solution01.cpp -g -pg -O0 --std=c++20 -o bin/prog
+
+COMPILE WITH SANITIZER:
+g++ solution01.cpp -g -pg -O0 --std=c++20 -fsanitize=address -o bin/prog
+
+
+RUN:
+./bin/prog < tests/input.txt > tests/output.txt
+
+WRITE ANALYSIS:
+gprof bin/prog gmon.out >analysis.txt

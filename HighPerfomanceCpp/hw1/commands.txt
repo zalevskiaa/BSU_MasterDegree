@@ -1,0 +1,7 @@
+cd hw1
+
+mkdir bin
+
+g++ -O0 -mavx -o bin/main main.cpp
+
+./bin/main

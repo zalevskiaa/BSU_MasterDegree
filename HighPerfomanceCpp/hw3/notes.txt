@@ -1,0 +1,275 @@
+Результаты вычислений и время работы - ниже.
+
+Последовательность разбивал на равные последовательные отрезки - 
+    по одному отрезку на каждый поток
+
+Считал для отрезка [0, n - 1], только сейчас заметил, что в условии требовалось для [1, n],
+    но в любом случае для n = 10 ** 10, в моём варианте на ответ это не влияет :\
+
+Каждый рабочий поток сохраняет количество обработанных и найденных 
+    счастливых чисел в собственную ячейку.
+
+Для синхронизации потоков (пишущего и одного из рабочих) использовал атомики.
+На самом деле для happy_counts они не нужны, т.к. к каждому элементу 
+    обращается только один соответствующий поток, но пусть будет для красоты
+
+Сравним результаты
+t   time
+1   195 s
+2   210 s
+3   200 s
+4   105 s
+5   125 s
+6   200 s
+
+На моём процессоре 4 ядра - закономерно ожидать, что для t=4 самое лучшее время.
+Но вот удивительно - для двух и трёх потоков чуть медленнее, чем для одного - 
+    может быть, выводящий поток не давал им нормально разогнаться,
+    а может быть, тут WSL как-то замешан :/
+
+Скорее всего очень влияет мой равномерный последовательный способ разбиения последовательности,
+    т.к. в начале числа покороче остальных и первый поток отрабатывает быстрее остальных.
+    Этим наверное можно объяснить, что для t = 5 тоже получилось примерно быстро, 
+        по крайней мере, быстрее, чем для t = 6
+
+
+Сами результаты:
+
+/usr/bin/g++ main.cpp -o main
+./main 1
+
+t: 1
+total: 0, time: 0 ms
+total: 251864179, time: 5000 ms
+total: 502944958, time: 10000 ms
+total: 758630202, time: 15000 ms
+total: 1011839871, time: 20000 ms
+total: 1263863780, time: 25000 ms
+total: 1515663756, time: 30000 ms
+total: 1773726510, time: 35000 ms
+total: 2035560856, time: 40000 ms
+total: 2297478865, time: 45000 ms
+total: 2559635030, time: 50000 ms
+total: 2817754935, time: 55000 ms
+total: 3074699774, time: 60000 ms
+total: 3332904317, time: 65000 ms
+total: 3593110526, time: 70000 ms
+total: 3850021296, time: 75000 ms
+total: 4107808045, time: 80000 ms
+total: 4366844904, time: 85000 ms
+total: 4626091933, time: 90000 ms
+total: 4871127908, time: 95000 ms
+total: 5130544199, time: 100000 ms
+total: 5390029820, time: 105000 ms
+total: 5650428110, time: 110000 ms
+total: 5908713712, time: 115000 ms
+total: 6168452123, time: 120000 ms
+total: 6429169510, time: 125000 ms
+total: 6687720139, time: 130000 ms
+total: 6949787404, time: 135000 ms
+total: 7208165064, time: 140000 ms
+total: 7468057121, time: 145000 ms
+total: 7727288402, time: 150000 ms
+total: 7984132530, time: 155000 ms
+total: 8241779481, time: 160000 ms
+total: 8502588455, time: 165000 ms
+total: 8760052631, time: 170000 ms
+total: 9019473675, time: 175000 ms
+total: 9280416005, time: 180000 ms
+total: 9540207849, time: 185000 ms
+total: 9801744736, time: 190000 ms
+total: 10000000000, time: 195000 ms
+happy: 184746, total: 10000000000
+
+
+t: 2
+total: 0, time: 0 ms
+total: 239367801, time: 5000 ms
+total: 477149496, time: 10000 ms
+total: 717115410, time: 15000 ms
+total: 957377759, time: 20000 ms
+total: 1196954042, time: 25000 ms
+total: 1436635884, time: 30000 ms
+total: 1676498321, time: 35000 ms
+total: 1916246878, time: 40000 ms
+total: 2156202783, time: 45000 ms
+total: 2395847830, time: 50000 ms
+total: 2635105107, time: 55000 ms
+total: 2876263337, time: 60000 ms
+total: 3116691577, time: 65000 ms
+total: 3357175531, time: 70000 ms
+total: 3597589899, time: 75000 ms
+total: 3838230389, time: 80000 ms
+total: 4078977704, time: 85000 ms
+total: 4317731558, time: 90000 ms
+total: 4556391505, time: 95000 ms
+total: 4796433635, time: 100000 ms
+total: 5036384571, time: 105000 ms
+total: 5276589785, time: 110000 ms
+total: 5516257268, time: 115000 ms
+total: 5756946280, time: 120000 ms
+total: 5997427418, time: 125000 ms
+total: 6237293296, time: 130000 ms
+total: 6477107784, time: 135000 ms
+total: 6718215674, time: 140000 ms
+total: 6958705307, time: 145000 ms
+total: 7200313979, time: 150000 ms
+total: 7440880389, time: 155000 ms
+total: 7679712833, time: 160000 ms
+total: 7920632427, time: 165000 ms
+total: 8159735340, time: 170000 ms
+total: 8400017235, time: 175000 ms
+total: 8640781191, time: 180000 ms
+total: 8881019183, time: 185000 ms
+total: 9121340054, time: 190000 ms
+total: 9362615902, time: 195000 ms
+total: 9601688920, time: 200000 ms
+total: 9840491574, time: 205000 ms
+total: 10000000000, time: 210000 ms
+happy: 184746, total: 10000000000
+
+
+t: 3
+total: 0, time: 0 ms
+total: 253590054, time: 5000 ms
+total: 507057793, time: 10000 ms
+total: 760660506, time: 15000 ms
+total: 1014202036, time: 20000 ms
+total: 1267941728, time: 25000 ms
+total: 1521343493, time: 30000 ms
+total: 1771575508, time: 35000 ms
+total: 2024894290, time: 40000 ms
+total: 2278408842, time: 45000 ms
+total: 2531841553, time: 50000 ms
+total: 2785502559, time: 55000 ms
+total: 3038958358, time: 60000 ms
+total: 3292477952, time: 65000 ms
+total: 3544775741, time: 70000 ms
+total: 3797905518, time: 75000 ms
+total: 4049912167, time: 80000 ms
+total: 4301920243, time: 85000 ms
+total: 4553971528, time: 90000 ms
+total: 4806752010, time: 95000 ms
+total: 5060524445, time: 100000 ms
+total: 5314121077, time: 105000 ms
+total: 5567835174, time: 110000 ms
+total: 5821303081, time: 115000 ms
+total: 6075308373, time: 120000 ms
+total: 6329162315, time: 125000 ms
+total: 6583091956, time: 130000 ms
+total: 6836967580, time: 135000 ms
+total: 7090899770, time: 140000 ms
+total: 7344937741, time: 145000 ms
+total: 7598296117, time: 150000 ms
+total: 7851792179, time: 155000 ms
+total: 8105401870, time: 160000 ms
+total: 8358615327, time: 165000 ms
+total: 8610274125, time: 170000 ms
+total: 8863684594, time: 175000 ms
+total: 9117195883, time: 180000 ms
+total: 9370750440, time: 185000 ms
+total: 9623244557, time: 190000 ms
+total: 9860161799, time: 195000 ms
+total: 10000000000, time: 200000 ms
+happy: 184746, total: 10000000000
+
+
+t: 4
+total: 0, time: 0 ms
+total: 482358370, time: 5000 ms
+total: 961274424, time: 10000 ms
+total: 1443365687, time: 15000 ms
+total: 1920256156, time: 20000 ms
+total: 2400057384, time: 25000 ms
+total: 2872635850, time: 30000 ms
+total: 3349426642, time: 35000 ms
+total: 3825734551, time: 40000 ms
+total: 4307464378, time: 45000 ms
+total: 4789699347, time: 50000 ms
+total: 5270316097, time: 55000 ms
+total: 5752052286, time: 60000 ms
+total: 6235112441, time: 65000 ms
+total: 6718845173, time: 70000 ms
+total: 7201499291, time: 75000 ms
+total: 7684556408, time: 80000 ms
+total: 8165539735, time: 85000 ms
+total: 8646890733, time: 90000 ms
+total: 9125364058, time: 95000 ms
+total: 9607657100, time: 100000 ms
+total: 10000000000, time: 105000 ms
+happy: 184746, total: 10000000000
+
+
+t: 5
+total: 0, time: 0 ms
+total: 481602139, time: 5000 ms
+total: 956475683, time: 10000 ms
+total: 1452338609, time: 15000 ms
+total: 1955242762, time: 20000 ms
+total: 2457761327, time: 25000 ms
+total: 2956165902, time: 30000 ms
+total: 3457451999, time: 35000 ms
+total: 3959346833, time: 40000 ms
+total: 4460507336, time: 45000 ms
+total: 4954661557, time: 50000 ms
+total: 5456167533, time: 55000 ms
+total: 5955159809, time: 60000 ms
+total: 6451855604, time: 65000 ms
+total: 6946082594, time: 70000 ms
+total: 7434723998, time: 75000 ms
+total: 7932785973, time: 80000 ms
+total: 8182863593, time: 85000 ms
+total: 8432986782, time: 90000 ms
+total: 8683431629, time: 95000 ms
+total: 8933792572, time: 100000 ms
+total: 9184220802, time: 105000 ms
+total: 9434425160, time: 110000 ms
+total: 9683885932, time: 115000 ms
+total: 9933878066, time: 120000 ms
+total: 10000000000, time: 125000 ms
+happy: 184746, total: 10000000000
+
+
+t: 6
+total: 0, time: 0 ms
+total: 252233390, time: 5000 ms
+total: 503948894, time: 10000 ms
+total: 756085272, time: 15000 ms
+total: 1008594934, time: 20000 ms
+total: 1260954938, time: 25000 ms
+total: 1513084276, time: 30000 ms
+total: 1765512331, time: 35000 ms
+total: 2017916746, time: 40000 ms
+total: 2270165275, time: 45000 ms
+total: 2522464380, time: 50000 ms
+total: 2774702729, time: 55000 ms
+total: 3027008965, time: 60000 ms
+total: 3279231574, time: 65000 ms
+total: 3531568217, time: 70000 ms
+total: 3783596648, time: 75000 ms
+total: 4035106450, time: 80000 ms
+total: 4286996961, time: 85000 ms
+total: 4538790759, time: 90000 ms
+total: 4791146681, time: 95000 ms
+total: 5043199200, time: 100000 ms
+total: 5294217401, time: 105000 ms
+total: 5546466185, time: 110000 ms
+total: 5798865740, time: 115000 ms
+total: 6051281602, time: 120000 ms
+total: 6302951015, time: 125000 ms
+total: 6555157522, time: 130000 ms
+total: 6806746475, time: 135000 ms
+total: 7058025261, time: 140000 ms
+total: 7309357541, time: 145000 ms
+total: 7559387337, time: 150000 ms
+total: 7809813922, time: 155000 ms
+total: 8062080947, time: 160000 ms
+total: 8314470863, time: 165000 ms
+total: 8566653953, time: 170000 ms
+total: 8818837829, time: 175000 ms
+total: 9071129663, time: 180000 ms
+total: 9323314132, time: 185000 ms
+total: 9575534305, time: 190000 ms
+total: 9827809246, time: 195000 ms
+total: 10000000000, time: 200000 ms
+happy: 184746, total: 10000000000

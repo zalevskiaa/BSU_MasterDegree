@@ -1,0 +1,765 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  ms/call  ms/call  name    
+ 75.87     30.94    30.94 654679064     0.00     0.00  SegmentTree::Push(int, int, int)
+  7.87     34.15     3.21 2344177446     0.00     0.00  std::vector<SegmentTree::Node, std::allocator<SegmentTree::Node> >::operator[](unsigned long)
+  3.78     35.69     1.54 269918162     0.00     0.00  SegmentTree::swap(long long&, long long&)
+  2.33     36.64     0.95  2497976     0.00     0.00  SegmentTree::GetSumOdd(int, int, int, int, int)
+  2.26     37.56     0.92  2502025     0.00     0.00  SegmentTree::GetSumEven(int, int, int, int, int)
+  1.94     38.35     0.79  2499947     0.00     0.01  SegmentTree::Inc(int, int, int, int, int)
+  1.66     39.02     0.68  2500052     0.00     0.00  SegmentTree::Set(int, int, int, int, int)
+  1.57     39.66     0.64 174915257     0.00     0.00  SegmentTree::Node::Merge(SegmentTree::Node const&, SegmentTree::Node const&)
+  1.08     40.10     0.44 269918162     0.00     0.00  SegmentTree::swap(int&, int&)
+  0.83     40.45     0.34        1   340.00   340.00  __gnu_cxx::__enable_if<!std::__is_scalar<SegmentTree::Node>::__value, void>::__type std::__fill_a1<SegmentTree::Node*, SegmentTree::Node>(SegmentTree::Node*, SegmentTree::Node*, SegmentTree::Node const&)
+  0.32     40.58     0.13                             main
+  0.27     40.69     0.11        1   110.00   246.36  SegmentTree::Build(std::vector<int, std::allocator<int> > const&, int, int, int)
+  0.12     40.73     0.05 12500052     0.00     0.00  SegmentTree::Node::Node(int)
+  0.05     40.76     0.02        1    20.00    20.00  __gnu_cxx::__enable_if<std::__is_scalar<int>::__value, void>::__type std::__fill_a1<int*, int>(int*, int*, int const&)
+  0.02     40.77     0.01                             _init
+  0.01     40.77     0.01 10000000     0.00     0.00  std::vector<int, std::allocator<int> >::operator[](unsigned long) const
+  0.01     40.77     0.01        1     5.00   591.36  SegmentTree::SegmentTree(std::vector<int, std::allocator<int> > const&)
+  0.01     40.78     0.01        1     5.00     5.00  std::allocator<int>::allocator()
+  0.00     40.78     0.00 10000000     0.00     0.00  std::vector<int, std::allocator<int> >::operator[](unsigned long)
+  0.00     40.78     0.00        7     0.00     0.00  std::vector<SegmentTree::Node, std::allocator<SegmentTree::Node> >::size() const
+  0.00     40.78     0.00        6     0.00     0.00  std::is_constant_evaluated()
+  0.00     40.78     0.00        5     0.00     0.00  unsigned long const& std::min<unsigned long>(unsigned long const&, unsigned long const&)
+  0.00     40.78     0.00        4     0.00     0.00  std::_Vector_base<SegmentTree::Node, std::allocator<SegmentTree::Node> >::_M_get_Tp_allocator() const
+  0.00     40.78     0.00        4     0.00     0.00  std::vector<SegmentTree::Node, std::allocator<SegmentTree::Node> >::max_size() const
+  0.00     40.78     0.00        4     0.00     0.00  std::allocator_traits<std::allocator<SegmentTree::Node> >::max_size(std::allocator<SegmentTree::Node> const&)
+  0.00     40.78     0.00        4     0.00     0.00  std::vector<SegmentTree::Node, std::allocator<SegmentTree::Node> >::_S_max_size(std::allocator<SegmentTree::Node> const&)
+  0.00     40.78     0.00        3     0.00     0.00  std::allocator<int>::~allocator()
+  0.00     40.78     0.00        3     0.00     0.00  std::_Vector_base<SegmentTree::Node, std::allocator<SegmentTree::Node> >::_M_get_Tp_allocator()
+  0.00     40.78     0.00        3     0.00     0.00  SegmentTree::Node* std::__niter_base<SegmentTree::Node*>(SegmentTree::Node*)
+  0.00     40.78     0.00        2     0.00     0.00  __gnu_cxx::new_allocator<int>::new_allocator(__gnu_cxx::new_allocator<int> const&)
+  0.00     40.78     0.00        2     0.00     0.00  std::allocator<int>::allocator(std::allocator<int> const&)
+  0.00     40.78     0.00        2     0.00     0.00  std::_Vector_base<SegmentTree::Node, std::allocator<SegmentTree::Node> >::_M_deallocate(SegmentTree::Node*, unsigned long)
+  0.00     40.78     0.00        2     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::_M_get_Tp_allocator()
+  0.00     40.78     0.00        2     0.00     0.00  std::__size_to_integer(unsigned long)
+  0.00     40.78     0.00        2     0.00     0.00  operator new(unsigned long, void*)
+  0.00     40.78     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00     40.78     0.00        1     0.00     0.00  SegmentTree::~SegmentTree()
+  0.00     40.78     0.00        1     0.00     0.00  __gnu_cxx::new_allocator<SegmentTree::Node>::deallocate(SegmentTree::Node*, unsigned long)
+  0.00     40.78     0.00        1     0.00     0.00  __gnu_cxx::new_allocator<SegmentTree::Node>::allocate(unsigned long, void const*)
+  0.00     40.78     0.00        1     0.00     0.00  __gnu_cxx::new_allocator<SegmentTree::Node>::new_allocator()
+  0.00     40.78     0.00        1     0.00     0.00  __gnu_cxx::new_allocator<int>::deallocate(int*, unsigned long)
+  0.00     40.78     0.00        1     0.00     0.00  __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*)
+  0.00     40.78     0.00        1     0.00     0.00  __gnu_cxx::new_allocator<int>::new_allocator()
+  0.00     40.78     0.00        1     0.00     0.00  __gnu_cxx::new_allocator<SegmentTree::Node>::_M_max_size() const
+  0.00     40.78     0.00        1     0.00     0.00  __gnu_cxx::new_allocator<int>::_M_max_size() const
+  0.00     40.78     0.00        1     0.00     0.00  std::vector<SegmentTree::Node, std::allocator<SegmentTree::Node> >::_M_check_len(unsigned long, char const*) const
+  0.00     40.78     0.00        1     0.00     0.00  std::vector<int, std::allocator<int> >::size() const
+  0.00     40.78     0.00        1     0.00     0.00  std::allocator<SegmentTree::Node>::allocator()
+  0.00     40.78     0.00        1     0.00     0.00  std::allocator<SegmentTree::Node>::~allocator()
+  0.00     40.78     0.00        1     0.00     0.00  void std::_Destroy_aux<true>::__destroy<SegmentTree::Node*>(SegmentTree::Node*, SegmentTree::Node*)
+  0.00     40.78     0.00        1     0.00     0.00  void std::_Destroy_aux<true>::__destroy<int*>(int*, int*)
+  0.00     40.78     0.00        1     0.00     0.00  std::_Vector_base<SegmentTree::Node, std::allocator<SegmentTree::Node> >::_M_allocate(unsigned long)
+  0.00     40.78     0.00        1     0.00     0.00  std::_Vector_base<SegmentTree::Node, std::allocator<SegmentTree::Node> >::_Vector_impl::_Vector_impl()
+  0.00     40.78     0.00        1     0.00     0.00  std::_Vector_base<SegmentTree::Node, std::allocator<SegmentTree::Node> >::_Vector_impl::~_Vector_impl()
+  0.00     40.78     0.00        1     0.00     0.00  std::_Vector_base<SegmentTree::Node, std::allocator<SegmentTree::Node> >::_Vector_impl_data::_Vector_impl_data()
+  0.00     40.78     0.00        1     0.00     0.00  std::_Vector_base<SegmentTree::Node, std::allocator<SegmentTree::Node> >::_Vector_base()
+  0.00     40.78     0.00        1     0.00     0.00  std::_Vector_base<SegmentTree::Node, std::allocator<SegmentTree::Node> >::~_Vector_base()
+  0.00     40.78     0.00        1     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long)
+  0.00     40.78     0.00        1     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::_Vector_impl::_Vector_impl(std::allocator<int> const&)
+  0.00     40.78     0.00        1     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::_Vector_impl::~_Vector_impl()
+  0.00     40.78     0.00        1     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::_M_deallocate(int*, unsigned long)
+  0.00     40.78     0.00        1     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::_M_create_storage(unsigned long)
+  0.00     40.78     0.00        1     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::_Vector_impl_data::_Vector_impl_data()
+  0.00     40.78     0.00        1     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::_Vector_base(unsigned long, std::allocator<int> const&)
+  0.00     40.78     0.00        1     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::~_Vector_base()
+  0.00     40.78     0.00        1     0.00     0.00  std::allocator_traits<std::allocator<SegmentTree::Node> >::deallocate(std::allocator<SegmentTree::Node>&, SegmentTree::Node*, unsigned long)
+  0.00     40.78     0.00        1     0.00     0.00  std::allocator_traits<std::allocator<SegmentTree::Node> >::allocate(std::allocator<SegmentTree::Node>&, unsigned long)
+  0.00     40.78     0.00        1     0.00     0.00  std::allocator_traits<std::allocator<int> >::deallocate(std::allocator<int>&, int*, unsigned long)
+  0.00     40.78     0.00        1     0.00     0.00  std::allocator_traits<std::allocator<int> >::allocate(std::allocator<int>&, unsigned long)
+  0.00     40.78     0.00        1     0.00     0.00  std::allocator_traits<std::allocator<int> >::max_size(std::allocator<int> const&)
+  0.00     40.78     0.00        1     0.00   340.00  SegmentTree::Node* std::__uninitialized_default_n_1<true>::__uninit_default_n<SegmentTree::Node*, unsigned long>(SegmentTree::Node*, unsigned long)
+  0.00     40.78     0.00        1     0.00    20.00  int* std::__uninitialized_default_n_1<true>::__uninit_default_n<int*, unsigned long>(int*, unsigned long)
+  0.00     40.78     0.00        1     0.00     0.00  std::vector<SegmentTree::Node, std::allocator<SegmentTree::Node> >::_S_relocate(SegmentTree::Node*, SegmentTree::Node*, SegmentTree::Node*, std::allocator<SegmentTree::Node>&)
+  0.00     40.78     0.00        1     0.00     0.00  std::vector<SegmentTree::Node, std::allocator<SegmentTree::Node> >::_S_do_relocate(SegmentTree::Node*, SegmentTree::Node*, SegmentTree::Node*, std::allocator<SegmentTree::Node>&, std::integral_constant<bool, true>)
+  0.00     40.78     0.00        1     0.00   340.00  std::vector<SegmentTree::Node, std::allocator<SegmentTree::Node> >::_M_default_append(unsigned long)
+  0.00     40.78     0.00        1     0.00   340.00  std::vector<SegmentTree::Node, std::allocator<SegmentTree::Node> >::resize(unsigned long)
+  0.00     40.78     0.00        1     0.00     0.00  std::vector<SegmentTree::Node, std::allocator<SegmentTree::Node> >::vector()
+  0.00     40.78     0.00        1     0.00     0.00  std::vector<SegmentTree::Node, std::allocator<SegmentTree::Node> >::~vector()
+  0.00     40.78     0.00        1     0.00     0.00  std::vector<int, std::allocator<int> >::_S_max_size(std::allocator<int> const&)
+  0.00     40.78     0.00        1     0.00     0.00  std::vector<int, std::allocator<int> >::_S_check_init_len(unsigned long, std::allocator<int> const&)
+  0.00     40.78     0.00        1     0.00    20.00  std::vector<int, std::allocator<int> >::_M_default_initialize(unsigned long)
+  0.00     40.78     0.00        1     0.00    20.00  std::vector<int, std::allocator<int> >::vector(unsigned long, std::allocator<int> const&)
+  0.00     40.78     0.00        1     0.00     0.00  std::vector<int, std::allocator<int> >::~vector()
+  0.00     40.78     0.00        1     0.00     0.00  void std::_Construct<SegmentTree::Node>(SegmentTree::Node*)
+  0.00     40.78     0.00        1     0.00     0.00  void std::_Construct<int>(int*)
+  0.00     40.78     0.00        1     0.00   340.00  SegmentTree::Node* std::__fill_n_a<SegmentTree::Node*, unsigned long, SegmentTree::Node>(SegmentTree::Node*, unsigned long, SegmentTree::Node const&, std::random_access_iterator_tag)
+  0.00     40.78     0.00        1     0.00    20.00  int* std::__fill_n_a<int*, unsigned long, int>(int*, unsigned long, int const&, std::random_access_iterator_tag)
+  0.00     40.78     0.00        1     0.00     0.00  SegmentTree::Node* std::__addressof<SegmentTree::Node>(SegmentTree::Node&)
+  0.00     40.78     0.00        1     0.00     0.00  int* std::__addressof<int>(int&)
+  0.00     40.78     0.00        1     0.00     0.00  SegmentTree::Node* std::__relocate_a<SegmentTree::Node*, SegmentTree::Node*, std::allocator<SegmentTree::Node> >(SegmentTree::Node*, SegmentTree::Node*, SegmentTree::Node*, std::allocator<SegmentTree::Node>&)
+  0.00     40.78     0.00        1     0.00     0.00  std::enable_if<std::__is_bitwise_relocatable<SegmentTree::Node, void>::value, SegmentTree::Node*>::type std::__relocate_a_1<SegmentTree::Node, SegmentTree::Node>(SegmentTree::Node*, SegmentTree::Node*, SegmentTree::Node*, std::allocator<SegmentTree::Node>&)
+  0.00     40.78     0.00        1     0.00     0.00  std::iterator_traits<SegmentTree::Node*>::iterator_category std::__iterator_category<SegmentTree::Node*>(SegmentTree::Node* const&)
+  0.00     40.78     0.00        1     0.00     0.00  std::iterator_traits<int*>::iterator_category std::__iterator_category<int*>(int* const&)
+  0.00     40.78     0.00        1     0.00   340.00  SegmentTree::Node* std::__uninitialized_default_n<SegmentTree::Node*, unsigned long>(SegmentTree::Node*, unsigned long)
+  0.00     40.78     0.00        1     0.00    20.00  int* std::__uninitialized_default_n<int*, unsigned long>(int*, unsigned long)
+  0.00     40.78     0.00        1     0.00   340.00  SegmentTree::Node* std::__uninitialized_default_n_a<SegmentTree::Node*, unsigned long, SegmentTree::Node>(SegmentTree::Node*, unsigned long, std::allocator<SegmentTree::Node>&)
+  0.00     40.78     0.00        1     0.00    20.00  int* std::__uninitialized_default_n_a<int*, unsigned long, int>(int*, unsigned long, std::allocator<int>&)
+  0.00     40.78     0.00        1     0.00     0.00  unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&)
+  0.00     40.78     0.00        1     0.00   340.00  SegmentTree::Node* std::fill_n<SegmentTree::Node*, unsigned long, SegmentTree::Node>(SegmentTree::Node*, unsigned long, SegmentTree::Node const&)
+  0.00     40.78     0.00        1     0.00    20.00  int* std::fill_n<int*, unsigned long, int>(int*, unsigned long, int const&)
+  0.00     40.78     0.00        1     0.00     0.00  void std::_Destroy<SegmentTree::Node*>(SegmentTree::Node*, SegmentTree::Node*)
+  0.00     40.78     0.00        1     0.00     0.00  void std::_Destroy<SegmentTree::Node*, SegmentTree::Node>(SegmentTree::Node*, SegmentTree::Node*, std::allocator<SegmentTree::Node>&)
+  0.00     40.78     0.00        1     0.00     0.00  void std::_Destroy<int*>(int*, int*)
+  0.00     40.78     0.00        1     0.00     0.00  void std::_Destroy<int*, int>(int*, int*, std::allocator<int>&)
+  0.00     40.78     0.00        1     0.00   340.00  void std::__fill_a<SegmentTree::Node*, SegmentTree::Node>(SegmentTree::Node*, SegmentTree::Node*, SegmentTree::Node const&)
+  0.00     40.78     0.00        1     0.00    20.00  void std::__fill_a<int*, int>(int*, int*, int const&)
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012-2022 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 4 byte(s) for 0.02% of 40.78 seconds
+
+index % time    self  children    called     name
+                                                 <spontaneous>
+[1]    100.0    0.13   40.64                 main [1]
+                0.79   12.49 2499947/2499947     SegmentTree::Inc(int, int, int, int, int) [3]
+                0.95    8.66 2497976/2497976     SegmentTree::GetSumOdd(int, int, int, int, int) [4]
+                0.92    8.67 2502025/2502025     SegmentTree::GetSumEven(int, int, int, int, int) [5]
+                0.68    6.87 2500052/2500052     SegmentTree::Set(int, int, int, int, int) [6]
+                0.01    0.59       1/1           SegmentTree::SegmentTree(std::vector<int, std::allocator<int> > const&) [10]
+                0.00    0.02       1/1           std::vector<int, std::allocator<int> >::vector(unsigned long, std::allocator<int> const&) [25]
+                0.01    0.00       1/1           std::allocator<int>::allocator() [34]
+                0.00    0.00 10000000/10000000     std::vector<int, std::allocator<int> >::operator[](unsigned long) [41]
+                0.00    0.00       1/3           std::allocator<int>::~allocator() [49]
+                0.00    0.00       1/1           std::vector<int, std::allocator<int> >::~vector() [99]
+                0.00    0.00       1/1           SegmentTree::~SegmentTree() [59]
+-----------------------------------------------
+                5.63    0.77 119114310/654679064     SegmentTree::Set(int, int, int, int, int) [6]
+                7.55    1.03 159795136/654679064     SegmentTree::GetSumOdd(int, int, int, int, int) [4]
+                7.56    1.04 160053413/654679064     SegmentTree::GetSumEven(int, int, int, int, int) [5]
+               10.19    1.40 215716205/654679064     SegmentTree::Inc(int, int, int, int, int) [3]
+[2]     86.3   30.94    4.24 654679064         SegmentTree::Push(int, int, int) [2]
+                2.26    0.00 1647007788/2344177446     std::vector<SegmentTree::Node, std::allocator<SegmentTree::Node> >::operator[](unsigned long) [7]
+                1.54    0.00 269918162/269918162     SegmentTree::swap(long long&, long long&) [8]
+                0.44    0.00 269918162/269918162     SegmentTree::swap(int&, int&) [11]
+-----------------------------------------------
+                             213216258             SegmentTree::Inc(int, int, int, int, int) [3]
+                0.79   12.49 2499947/2499947     main [1]
+[3]     32.6    0.79   12.49 2499947+213216258 SegmentTree::Inc(int, int, int, int, int) [3]
+               10.19    1.40 215716205/654679064     SegmentTree::Push(int, int, int) [2]
+                0.51    0.00 373133100/2344177446     std::vector<SegmentTree::Node, std::allocator<SegmentTree::Node> >::operator[](unsigned long) [7]
+                0.39    0.00 106608129/174915257     SegmentTree::Node::Merge(SegmentTree::Node const&, SegmentTree::Node const&) [9]
+                             213216258             SegmentTree::Inc(int, int, int, int, int) [3]
+-----------------------------------------------
+                             213057260             SegmentTree::GetSumOdd(int, int, int, int, int) [4]
+                0.95    8.66 2497976/2497976     main [1]
+[4]     23.6    0.95    8.66 2497976+213057260 SegmentTree::GetSumOdd(int, int, int, int, int) [4]
+                7.55    1.03 159795136/654679064     SegmentTree::Push(int, int, int) [2]
+                0.07    0.00 53266506/2344177446     std::vector<SegmentTree::Node, std::allocator<SegmentTree::Node> >::operator[](unsigned long) [7]
+                             213057260             SegmentTree::GetSumOdd(int, int, int, int, int) [4]
+-----------------------------------------------
+                             213409594             SegmentTree::GetSumEven(int, int, int, int, int) [5]
+                0.92    8.67 2502025/2502025     main [1]
+[5]     23.5    0.92    8.67 2502025+213409594 SegmentTree::GetSumEven(int, int, int, int, int) [5]
+                7.56    1.04 160053413/654679064     SegmentTree::Push(int, int, int) [2]
+                0.07    0.00 53348616/2344177446     std::vector<SegmentTree::Node, std::allocator<SegmentTree::Node> >::operator[](unsigned long) [7]
+                             213409594             SegmentTree::GetSumEven(int, int, int, int, int) [5]
+-----------------------------------------------
+                             116614258             SegmentTree::Set(int, int, int, int, int) [6]
+                0.68    6.87 2500052/2500052     main [1]
+[6]     18.5    0.68    6.87 2500052+116614258 SegmentTree::Set(int, int, int, int, int) [6]
+                5.63    0.77 119114310/654679064     SegmentTree::Push(int, int, int) [2]
+                0.24    0.00 177421439/2344177446     std::vector<SegmentTree::Node, std::allocator<SegmentTree::Node> >::operator[](unsigned long) [7]
+                0.21    0.00 58307129/174915257     SegmentTree::Node::Merge(SegmentTree::Node const&, SegmentTree::Node const&) [9]
+                0.01    0.00 2500052/12500052     SegmentTree::Node::Node(int) [22]
+                             116614258             SegmentTree::Set(int, int, int, int, int) [6]
+-----------------------------------------------
+                0.05    0.00 39999997/2344177446     SegmentTree::Build(std::vector<int, std::allocator<int> > const&, int, int, int) [21]
+                0.07    0.00 53266506/2344177446     SegmentTree::GetSumOdd(int, int, int, int, int) [4]
+                0.07    0.00 53348616/2344177446     SegmentTree::GetSumEven(int, int, int, int, int) [5]
+                0.24    0.00 177421439/2344177446     SegmentTree::Set(int, int, int, int, int) [6]
+                0.51    0.00 373133100/2344177446     SegmentTree::Inc(int, int, int, int, int) [3]
+                2.26    0.00 1647007788/2344177446     SegmentTree::Push(int, int, int) [2]
+[7]      7.9    3.21    0.00 2344177446         std::vector<SegmentTree::Node, std::allocator<SegmentTree::Node> >::operator[](unsigned long) [7]
+-----------------------------------------------
+                1.54    0.00 269918162/269918162     SegmentTree::Push(int, int, int) [2]
+[8]      3.8    1.54    0.00 269918162         SegmentTree::swap(long long&, long long&) [8]
+-----------------------------------------------
+                0.04    0.00 9999999/174915257     SegmentTree::Build(std::vector<int, std::allocator<int> > const&, int, int, int) [21]
+                0.21    0.00 58307129/174915257     SegmentTree::Set(int, int, int, int, int) [6]
+                0.39    0.00 106608129/174915257     SegmentTree::Inc(int, int, int, int, int) [3]
+[9]      1.6    0.64    0.00 174915257         SegmentTree::Node::Merge(SegmentTree::Node const&, SegmentTree::Node const&) [9]
+-----------------------------------------------
+                0.01    0.59       1/1           main [1]
+[10]     1.5    0.01    0.59       1         SegmentTree::SegmentTree(std::vector<int, std::allocator<int> > const&) [10]
+                0.00    0.34       1/1           std::vector<SegmentTree::Node, std::allocator<SegmentTree::Node> >::resize(unsigned long) [14]
+                0.11    0.14       1/1           SegmentTree::Build(std::vector<int, std::allocator<int> > const&, int, int, int) [21]
+                0.00    0.00       1/1           std::vector<SegmentTree::Node, std::allocator<SegmentTree::Node> >::vector() [95]
+                0.00    0.00       1/1           std::vector<int, std::allocator<int> >::size() const [69]
+-----------------------------------------------
+                0.44    0.00 269918162/269918162     SegmentTree::Push(int, int, int) [2]
+[11]     1.1    0.44    0.00 269918162         SegmentTree::swap(int&, int&) [11]
+-----------------------------------------------
+                0.00    0.34       1/1           SegmentTree::Node* std::__uninitialized_default_n<SegmentTree::Node*, unsigned long>(SegmentTree::Node*, unsigned long) [16]
+[12]     0.8    0.00    0.34       1         SegmentTree::Node* std::__uninitialized_default_n_1<true>::__uninit_default_n<SegmentTree::Node*, unsigned long>(SegmentTree::Node*, unsigned long) [12]
+                0.00    0.34       1/1           SegmentTree::Node* std::fill_n<SegmentTree::Node*, unsigned long, SegmentTree::Node>(SegmentTree::Node*, unsigned long, SegmentTree::Node const&) [18]
+                0.00    0.00       1/1           SegmentTree::Node* std::__addressof<SegmentTree::Node>(SegmentTree::Node&) [102]
+                0.00    0.00       1/1           void std::_Construct<SegmentTree::Node>(SegmentTree::Node*) [100]
+-----------------------------------------------
+                0.00    0.34       1/1           std::vector<SegmentTree::Node, std::allocator<SegmentTree::Node> >::resize(unsigned long) [14]
+[13]     0.8    0.00    0.34       1         std::vector<SegmentTree::Node, std::allocator<SegmentTree::Node> >::_M_default_append(unsigned long) [13]
+                0.00    0.34       1/1           SegmentTree::Node* std::__uninitialized_default_n_a<SegmentTree::Node*, unsigned long, SegmentTree::Node>(SegmentTree::Node*, unsigned long, std::allocator<SegmentTree::Node>&) [17]
+                0.00    0.00       2/4           std::vector<SegmentTree::Node, std::allocator<SegmentTree::Node> >::max_size() const [46]
+                0.00    0.00       2/3           std::_Vector_base<SegmentTree::Node, std::allocator<SegmentTree::Node> >::_M_get_Tp_allocator() [50]
+                0.00    0.00       1/7           std::vector<SegmentTree::Node, std::allocator<SegmentTree::Node> >::size() const [42]
+                0.00    0.00       1/1           std::vector<SegmentTree::Node, std::allocator<SegmentTree::Node> >::_M_check_len(unsigned long, char const*) const [68]
+                0.00    0.00       1/1           std::_Vector_base<SegmentTree::Node, std::allocator<SegmentTree::Node> >::_M_allocate(unsigned long) [74]
+                0.00    0.00       1/1           std::vector<SegmentTree::Node, std::allocator<SegmentTree::Node> >::_S_relocate(SegmentTree::Node*, SegmentTree::Node*, SegmentTree::Node*, std::allocator<SegmentTree::Node>&) [93]
+                0.00    0.00       1/2           std::_Vector_base<SegmentTree::Node, std::allocator<SegmentTree::Node> >::_M_deallocate(SegmentTree::Node*, unsigned long) [54]
+-----------------------------------------------
+                0.00    0.34       1/1           SegmentTree::SegmentTree(std::vector<int, std::allocator<int> > const&) [10]
+[14]     0.8    0.00    0.34       1         std::vector<SegmentTree::Node, std::allocator<SegmentTree::Node> >::resize(unsigned long) [14]
+                0.00    0.34       1/1           std::vector<SegmentTree::Node, std::allocator<SegmentTree::Node> >::_M_default_append(unsigned long) [13]
+                0.00    0.00       2/7           std::vector<SegmentTree::Node, std::allocator<SegmentTree::Node> >::size() const [42]
+-----------------------------------------------
+                0.00    0.34       1/1           SegmentTree::Node* std::fill_n<SegmentTree::Node*, unsigned long, SegmentTree::Node>(SegmentTree::Node*, unsigned long, SegmentTree::Node const&) [18]
+[15]     0.8    0.00    0.34       1         SegmentTree::Node* std::__fill_n_a<SegmentTree::Node*, unsigned long, SegmentTree::Node>(SegmentTree::Node*, unsigned long, SegmentTree::Node const&, std::random_access_iterator_tag) [15]
+                0.00    0.34       1/1           void std::__fill_a<SegmentTree::Node*, SegmentTree::Node>(SegmentTree::Node*, SegmentTree::Node*, SegmentTree::Node const&) [19]
+-----------------------------------------------
+                0.00    0.34       1/1           SegmentTree::Node* std::__uninitialized_default_n_a<SegmentTree::Node*, unsigned long, SegmentTree::Node>(SegmentTree::Node*, unsigned long, std::allocator<SegmentTree::Node>&) [17]
+[16]     0.8    0.00    0.34       1         SegmentTree::Node* std::__uninitialized_default_n<SegmentTree::Node*, unsigned long>(SegmentTree::Node*, unsigned long) [16]
+                0.00    0.34       1/1           SegmentTree::Node* std::__uninitialized_default_n_1<true>::__uninit_default_n<SegmentTree::Node*, unsigned long>(SegmentTree::Node*, unsigned long) [12]
+-----------------------------------------------
+                0.00    0.34       1/1           std::vector<SegmentTree::Node, std::allocator<SegmentTree::Node> >::_M_default_append(unsigned long) [13]
+[17]     0.8    0.00    0.34       1         SegmentTree::Node* std::__uninitialized_default_n_a<SegmentTree::Node*, unsigned long, SegmentTree::Node>(SegmentTree::Node*, unsigned long, std::allocator<SegmentTree::Node>&) [17]
+                0.00    0.34       1/1           SegmentTree::Node* std::__uninitialized_default_n<SegmentTree::Node*, unsigned long>(SegmentTree::Node*, unsigned long) [16]
+-----------------------------------------------
+                0.00    0.34       1/1           SegmentTree::Node* std::__uninitialized_default_n_1<true>::__uninit_default_n<SegmentTree::Node*, unsigned long>(SegmentTree::Node*, unsigned long) [12]
+[18]     0.8    0.00    0.34       1         SegmentTree::Node* std::fill_n<SegmentTree::Node*, unsigned long, SegmentTree::Node>(SegmentTree::Node*, unsigned long, SegmentTree::Node const&) [18]
+                0.00    0.34       1/1           SegmentTree::Node* std::__fill_n_a<SegmentTree::Node*, unsigned long, SegmentTree::Node>(SegmentTree::Node*, unsigned long, SegmentTree::Node const&, std::random_access_iterator_tag) [15]
+                0.00    0.00       1/1           std::iterator_traits<SegmentTree::Node*>::iterator_category std::__iterator_category<SegmentTree::Node*>(SegmentTree::Node* const&) [106]
+                0.00    0.00       1/2           std::__size_to_integer(unsigned long) [56]
+-----------------------------------------------
+                0.00    0.34       1/1           SegmentTree::Node* std::__fill_n_a<SegmentTree::Node*, unsigned long, SegmentTree::Node>(SegmentTree::Node*, unsigned long, SegmentTree::Node const&, std::random_access_iterator_tag) [15]
+[19]     0.8    0.00    0.34       1         void std::__fill_a<SegmentTree::Node*, SegmentTree::Node>(SegmentTree::Node*, SegmentTree::Node*, SegmentTree::Node const&) [19]
+                0.34    0.00       1/1           __gnu_cxx::__enable_if<!std::__is_scalar<SegmentTree::Node>::__value, void>::__type std::__fill_a1<SegmentTree::Node*, SegmentTree::Node>(SegmentTree::Node*, SegmentTree::Node*, SegmentTree::Node const&) [20]
+-----------------------------------------------
+                0.34    0.00       1/1           void std::__fill_a<SegmentTree::Node*, SegmentTree::Node>(SegmentTree::Node*, SegmentTree::Node*, SegmentTree::Node const&) [19]
+[20]     0.8    0.34    0.00       1         __gnu_cxx::__enable_if<!std::__is_scalar<SegmentTree::Node>::__value, void>::__type std::__fill_a1<SegmentTree::Node*, SegmentTree::Node>(SegmentTree::Node*, SegmentTree::Node*, SegmentTree::Node const&) [20]
+-----------------------------------------------
+                             19999998             SegmentTree::Build(std::vector<int, std::allocator<int> > const&, int, int, int) [21]
+                0.11    0.14       1/1           SegmentTree::SegmentTree(std::vector<int, std::allocator<int> > const&) [10]
+[21]     0.6    0.11    0.14       1+19999998 SegmentTree::Build(std::vector<int, std::allocator<int> > const&, int, int, int) [21]
+                0.05    0.00 39999997/2344177446     std::vector<SegmentTree::Node, std::allocator<SegmentTree::Node> >::operator[](unsigned long) [7]
+                0.04    0.00 10000000/12500052     SegmentTree::Node::Node(int) [22]
+                0.04    0.00 9999999/174915257     SegmentTree::Node::Merge(SegmentTree::Node const&, SegmentTree::Node const&) [9]
+                0.01    0.00 10000000/10000000     std::vector<int, std::allocator<int> >::operator[](unsigned long) const [33]
+                             19999998             SegmentTree::Build(std::vector<int, std::allocator<int> > const&, int, int, int) [21]
+-----------------------------------------------
+                0.01    0.00 2500052/12500052     SegmentTree::Set(int, int, int, int, int) [6]
+                0.04    0.00 10000000/12500052     SegmentTree::Build(std::vector<int, std::allocator<int> > const&, int, int, int) [21]
+[22]     0.1    0.05    0.00 12500052         SegmentTree::Node::Node(int) [22]
+-----------------------------------------------
+                0.00    0.02       1/1           int* std::__uninitialized_default_n<int*, unsigned long>(int*, unsigned long) [27]
+[23]     0.0    0.00    0.02       1         int* std::__uninitialized_default_n_1<true>::__uninit_default_n<int*, unsigned long>(int*, unsigned long) [23]
+                0.00    0.02       1/1           int* std::fill_n<int*, unsigned long, int>(int*, unsigned long, int const&) [29]
+                0.00    0.00       1/1           int* std::__addressof<int>(int&) [103]
+                0.00    0.00       1/1           void std::_Construct<int>(int*) [101]
+-----------------------------------------------
+                0.00    0.02       1/1           std::vector<int, std::allocator<int> >::vector(unsigned long, std::allocator<int> const&) [25]
+[24]     0.0    0.00    0.02       1         std::vector<int, std::allocator<int> >::_M_default_initialize(unsigned long) [24]
+                0.00    0.02       1/1           int* std::__uninitialized_default_n_a<int*, unsigned long, int>(int*, unsigned long, std::allocator<int>&) [28]
+                0.00    0.00       1/2           std::_Vector_base<int, std::allocator<int> >::_M_get_Tp_allocator() [55]
+-----------------------------------------------
+                0.00    0.02       1/1           main [1]
+[25]     0.0    0.00    0.02       1         std::vector<int, std::allocator<int> >::vector(unsigned long, std::allocator<int> const&) [25]
+                0.00    0.02       1/1           std::vector<int, std::allocator<int> >::_M_default_initialize(unsigned long) [24]
+                0.00    0.00       1/1           std::vector<int, std::allocator<int> >::_S_check_init_len(unsigned long, std::allocator<int> const&) [98]
+                0.00    0.00       1/1           std::_Vector_base<int, std::allocator<int> >::_Vector_base(unsigned long, std::allocator<int> const&) [86]
+-----------------------------------------------
+                0.00    0.02       1/1           int* std::fill_n<int*, unsigned long, int>(int*, unsigned long, int const&) [29]
+[26]     0.0    0.00    0.02       1         int* std::__fill_n_a<int*, unsigned long, int>(int*, unsigned long, int const&, std::random_access_iterator_tag) [26]
+                0.00    0.02       1/1           void std::__fill_a<int*, int>(int*, int*, int const&) [30]
+-----------------------------------------------
+                0.00    0.02       1/1           int* std::__uninitialized_default_n_a<int*, unsigned long, int>(int*, unsigned long, std::allocator<int>&) [28]
+[27]     0.0    0.00    0.02       1         int* std::__uninitialized_default_n<int*, unsigned long>(int*, unsigned long) [27]
+                0.00    0.02       1/1           int* std::__uninitialized_default_n_1<true>::__uninit_default_n<int*, unsigned long>(int*, unsigned long) [23]
+-----------------------------------------------
+                0.00    0.02       1/1           std::vector<int, std::allocator<int> >::_M_default_initialize(unsigned long) [24]
+[28]     0.0    0.00    0.02       1         int* std::__uninitialized_default_n_a<int*, unsigned long, int>(int*, unsigned long, std::allocator<int>&) [28]
+                0.00    0.02       1/1           int* std::__uninitialized_default_n<int*, unsigned long>(int*, unsigned long) [27]
+-----------------------------------------------
+                0.00    0.02       1/1           int* std::__uninitialized_default_n_1<true>::__uninit_default_n<int*, unsigned long>(int*, unsigned long) [23]
+[29]     0.0    0.00    0.02       1         int* std::fill_n<int*, unsigned long, int>(int*, unsigned long, int const&) [29]
+                0.00    0.02       1/1           int* std::__fill_n_a<int*, unsigned long, int>(int*, unsigned long, int const&, std::random_access_iterator_tag) [26]
+                0.00    0.00       1/1           std::iterator_traits<int*>::iterator_category std::__iterator_category<int*>(int* const&) [107]
+                0.00    0.00       1/2           std::__size_to_integer(unsigned long) [56]
+-----------------------------------------------
+                0.00    0.02       1/1           int* std::__fill_n_a<int*, unsigned long, int>(int*, unsigned long, int const&, std::random_access_iterator_tag) [26]
+[30]     0.0    0.00    0.02       1         void std::__fill_a<int*, int>(int*, int*, int const&) [30]
+                0.02    0.00       1/1           __gnu_cxx::__enable_if<std::__is_scalar<int>::__value, void>::__type std::__fill_a1<int*, int>(int*, int*, int const&) [31]
+-----------------------------------------------
+                0.02    0.00       1/1           void std::__fill_a<int*, int>(int*, int*, int const&) [30]
+[31]     0.0    0.02    0.00       1         __gnu_cxx::__enable_if<std::__is_scalar<int>::__value, void>::__type std::__fill_a1<int*, int>(int*, int*, int const&) [31]
+-----------------------------------------------
+                                                 <spontaneous>
+[32]     0.0    0.01    0.00                 _init [32]
+-----------------------------------------------
+                0.01    0.00 10000000/10000000     SegmentTree::Build(std::vector<int, std::allocator<int> > const&, int, int, int) [21]
+[33]     0.0    0.01    0.00 10000000         std::vector<int, std::allocator<int> >::operator[](unsigned long) const [33]
+-----------------------------------------------
+                0.01    0.00       1/1           main [1]
+[34]     0.0    0.01    0.00       1         std::allocator<int>::allocator() [34]
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<int>::new_allocator() [65]
+-----------------------------------------------
+                0.00    0.00 10000000/10000000     main [1]
+[41]     0.0    0.00    0.00 10000000         std::vector<int, std::allocator<int> >::operator[](unsigned long) [41]
+-----------------------------------------------
+                0.00    0.00       1/7           std::vector<SegmentTree::Node, std::allocator<SegmentTree::Node> >::_M_default_append(unsigned long) [13]
+                0.00    0.00       2/7           std::vector<SegmentTree::Node, std::allocator<SegmentTree::Node> >::resize(unsigned long) [14]
+                0.00    0.00       4/7           std::vector<SegmentTree::Node, std::allocator<SegmentTree::Node> >::_M_check_len(unsigned long, char const*) const [68]
+[42]     0.0    0.00    0.00       7         std::vector<SegmentTree::Node, std::allocator<SegmentTree::Node> >::size() const [42]
+-----------------------------------------------
+                0.00    0.00       1/6           std::allocator_traits<std::allocator<SegmentTree::Node> >::deallocate(std::allocator<SegmentTree::Node>&, SegmentTree::Node*, unsigned long) [88]
+                0.00    0.00       1/6           void std::_Destroy<SegmentTree::Node*>(SegmentTree::Node*, SegmentTree::Node*) [109]
+                0.00    0.00       1/6           void std::_Destroy<int*>(int*, int*) [111]
+                0.00    0.00       1/6           std::allocator_traits<std::allocator<SegmentTree::Node> >::allocate(std::allocator<SegmentTree::Node>&, unsigned long) [89]
+                0.00    0.00       1/6           std::allocator_traits<std::allocator<int> >::deallocate(std::allocator<int>&, int*, unsigned long) [90]
+                0.00    0.00       1/6           std::allocator_traits<std::allocator<int> >::allocate(std::allocator<int>&, unsigned long) [91]
+[43]     0.0    0.00    0.00       6         std::is_constant_evaluated() [43]
+-----------------------------------------------
+                0.00    0.00       1/5           std::vector<int, std::allocator<int> >::_S_max_size(std::allocator<int> const&) [97]
+                0.00    0.00       4/5           std::vector<SegmentTree::Node, std::allocator<SegmentTree::Node> >::_S_max_size(std::allocator<SegmentTree::Node> const&) [48]
+[44]     0.0    0.00    0.00       5         unsigned long const& std::min<unsigned long>(unsigned long const&, unsigned long const&) [44]
+-----------------------------------------------
+                0.00    0.00       4/4           std::vector<SegmentTree::Node, std::allocator<SegmentTree::Node> >::max_size() const [46]
+[45]     0.0    0.00    0.00       4         std::_Vector_base<SegmentTree::Node, std::allocator<SegmentTree::Node> >::_M_get_Tp_allocator() const [45]
+-----------------------------------------------
+                0.00    0.00       2/4           std::vector<SegmentTree::Node, std::allocator<SegmentTree::Node> >::_M_default_append(unsigned long) [13]
+                0.00    0.00       2/4           std::vector<SegmentTree::Node, std::allocator<SegmentTree::Node> >::_M_check_len(unsigned long, char const*) const [68]
+[46]     0.0    0.00    0.00       4         std::vector<SegmentTree::Node, std::allocator<SegmentTree::Node> >::max_size() const [46]
+                0.00    0.00       4/4           std::vector<SegmentTree::Node, std::allocator<SegmentTree::Node> >::_S_max_size(std::allocator<SegmentTree::Node> const&) [48]
+                0.00    0.00       4/4           std::_Vector_base<SegmentTree::Node, std::allocator<SegmentTree::Node> >::_M_get_Tp_allocator() const [45]
+-----------------------------------------------
+                0.00    0.00       4/4           std::vector<SegmentTree::Node, std::allocator<SegmentTree::Node> >::_S_max_size(std::allocator<SegmentTree::Node> const&) [48]
+[47]     0.0    0.00    0.00       4         std::allocator_traits<std::allocator<SegmentTree::Node> >::max_size(std::allocator<SegmentTree::Node> const&) [47]
+-----------------------------------------------
+                0.00    0.00       4/4           std::vector<SegmentTree::Node, std::allocator<SegmentTree::Node> >::max_size() const [46]
+[48]     0.0    0.00    0.00       4         std::vector<SegmentTree::Node, std::allocator<SegmentTree::Node> >::_S_max_size(std::allocator<SegmentTree::Node> const&) [48]
+                0.00    0.00       4/4           std::allocator_traits<std::allocator<SegmentTree::Node> >::max_size(std::allocator<SegmentTree::Node> const&) [47]
+                0.00    0.00       4/5           unsigned long const& std::min<unsigned long>(unsigned long const&, unsigned long const&) [44]
+-----------------------------------------------
+                0.00    0.00       1/3           main [1]
+                0.00    0.00       1/3           std::vector<int, std::allocator<int> >::_S_check_init_len(unsigned long, std::allocator<int> const&) [98]
+                0.00    0.00       1/3           std::_Vector_base<int, std::allocator<int> >::_Vector_impl::~_Vector_impl() [82]
+[49]     0.0    0.00    0.00       3         std::allocator<int>::~allocator() [49]
+-----------------------------------------------
+                0.00    0.00       1/3           std::vector<SegmentTree::Node, std::allocator<SegmentTree::Node> >::~vector() [96]
+                0.00    0.00       2/3           std::vector<SegmentTree::Node, std::allocator<SegmentTree::Node> >::_M_default_append(unsigned long) [13]
+[50]     0.0    0.00    0.00       3         std::_Vector_base<SegmentTree::Node, std::allocator<SegmentTree::Node> >::_M_get_Tp_allocator() [50]
+-----------------------------------------------
+                0.00    0.00       3/3           SegmentTree::Node* std::__relocate_a<SegmentTree::Node*, SegmentTree::Node*, std::allocator<SegmentTree::Node> >(SegmentTree::Node*, SegmentTree::Node*, SegmentTree::Node*, std::allocator<SegmentTree::Node>&) [104]
+[51]     0.0    0.00    0.00       3         SegmentTree::Node* std::__niter_base<SegmentTree::Node*>(SegmentTree::Node*) [51]
+-----------------------------------------------
+                0.00    0.00       2/2           std::allocator<int>::allocator(std::allocator<int> const&) [53]
+[52]     0.0    0.00    0.00       2         __gnu_cxx::new_allocator<int>::new_allocator(__gnu_cxx::new_allocator<int> const&) [52]
+-----------------------------------------------
+                0.00    0.00       1/2           std::vector<int, std::allocator<int> >::_S_check_init_len(unsigned long, std::allocator<int> const&) [98]
+                0.00    0.00       1/2           std::_Vector_base<int, std::allocator<int> >::_Vector_impl::_Vector_impl(std::allocator<int> const&) [81]
+[53]     0.0    0.00    0.00       2         std::allocator<int>::allocator(std::allocator<int> const&) [53]
+                0.00    0.00       2/2           __gnu_cxx::new_allocator<int>::new_allocator(__gnu_cxx::new_allocator<int> const&) [52]
+-----------------------------------------------
+                0.00    0.00       1/2           std::_Vector_base<SegmentTree::Node, std::allocator<SegmentTree::Node> >::~_Vector_base() [79]
+                0.00    0.00       1/2           std::vector<SegmentTree::Node, std::allocator<SegmentTree::Node> >::_M_default_append(unsigned long) [13]
+[54]     0.0    0.00    0.00       2         std::_Vector_base<SegmentTree::Node, std::allocator<SegmentTree::Node> >::_M_deallocate(SegmentTree::Node*, unsigned long) [54]
+                0.00    0.00       1/1           std::allocator_traits<std::allocator<SegmentTree::Node> >::deallocate(std::allocator<SegmentTree::Node>&, SegmentTree::Node*, unsigned long) [88]
+-----------------------------------------------
+                0.00    0.00       1/2           std::vector<int, std::allocator<int> >::~vector() [99]
+                0.00    0.00       1/2           std::vector<int, std::allocator<int> >::_M_default_initialize(unsigned long) [24]
+[55]     0.0    0.00    0.00       2         std::_Vector_base<int, std::allocator<int> >::_M_get_Tp_allocator() [55]
+-----------------------------------------------
+                0.00    0.00       1/2           SegmentTree::Node* std::fill_n<SegmentTree::Node*, unsigned long, SegmentTree::Node>(SegmentTree::Node*, unsigned long, SegmentTree::Node const&) [18]
+                0.00    0.00       1/2           int* std::fill_n<int*, unsigned long, int>(int*, unsigned long, int const&) [29]
+[56]     0.0    0.00    0.00       2         std::__size_to_integer(unsigned long) [56]
+-----------------------------------------------
+                0.00    0.00       1/2           void std::_Construct<SegmentTree::Node>(SegmentTree::Node*) [100]
+                0.00    0.00       1/2           void std::_Construct<int>(int*) [101]
+[57]     0.0    0.00    0.00       2         operator new(unsigned long, void*) [57]
+-----------------------------------------------
+                0.00    0.00       1/1           _GLOBAL__sub_I_main [113]
+[58]     0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [58]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[59]     0.0    0.00    0.00       1         SegmentTree::~SegmentTree() [59]
+                0.00    0.00       1/1           std::vector<SegmentTree::Node, std::allocator<SegmentTree::Node> >::~vector() [96]
+-----------------------------------------------
+                0.00    0.00       1/1           std::allocator_traits<std::allocator<SegmentTree::Node> >::deallocate(std::allocator<SegmentTree::Node>&, SegmentTree::Node*, unsigned long) [88]
+[60]     0.0    0.00    0.00       1         __gnu_cxx::new_allocator<SegmentTree::Node>::deallocate(SegmentTree::Node*, unsigned long) [60]
+-----------------------------------------------
+                0.00    0.00       1/1           std::allocator_traits<std::allocator<SegmentTree::Node> >::allocate(std::allocator<SegmentTree::Node>&, unsigned long) [89]
+[61]     0.0    0.00    0.00       1         __gnu_cxx::new_allocator<SegmentTree::Node>::allocate(unsigned long, void const*) [61]
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<SegmentTree::Node>::_M_max_size() const [66]
+-----------------------------------------------
+                0.00    0.00       1/1           std::allocator<SegmentTree::Node>::allocator() [70]
+[62]     0.0    0.00    0.00       1         __gnu_cxx::new_allocator<SegmentTree::Node>::new_allocator() [62]
+-----------------------------------------------
+                0.00    0.00       1/1           std::allocator_traits<std::allocator<int> >::deallocate(std::allocator<int>&, int*, unsigned long) [90]
+[63]     0.0    0.00    0.00       1         __gnu_cxx::new_allocator<int>::deallocate(int*, unsigned long) [63]
+-----------------------------------------------
+                0.00    0.00       1/1           std::allocator_traits<std::allocator<int> >::allocate(std::allocator<int>&, unsigned long) [91]
+[64]     0.0    0.00    0.00       1         __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) [64]
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<int>::_M_max_size() const [67]
+-----------------------------------------------
+                0.00    0.00       1/1           std::allocator<int>::allocator() [34]
+[65]     0.0    0.00    0.00       1         __gnu_cxx::new_allocator<int>::new_allocator() [65]
+-----------------------------------------------
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<SegmentTree::Node>::allocate(unsigned long, void const*) [61]
+[66]     0.0    0.00    0.00       1         __gnu_cxx::new_allocator<SegmentTree::Node>::_M_max_size() const [66]
+-----------------------------------------------
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) [64]
+[67]     0.0    0.00    0.00       1         __gnu_cxx::new_allocator<int>::_M_max_size() const [67]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<SegmentTree::Node, std::allocator<SegmentTree::Node> >::_M_default_append(unsigned long) [13]
+[68]     0.0    0.00    0.00       1         std::vector<SegmentTree::Node, std::allocator<SegmentTree::Node> >::_M_check_len(unsigned long, char const*) const [68]
+                0.00    0.00       4/7           std::vector<SegmentTree::Node, std::allocator<SegmentTree::Node> >::size() const [42]
+                0.00    0.00       2/4           std::vector<SegmentTree::Node, std::allocator<SegmentTree::Node> >::max_size() const [46]
+                0.00    0.00       1/1           unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&) [108]
+-----------------------------------------------
+                0.00    0.00       1/1           SegmentTree::SegmentTree(std::vector<int, std::allocator<int> > const&) [10]
+[69]     0.0    0.00    0.00       1         std::vector<int, std::allocator<int> >::size() const [69]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<SegmentTree::Node, std::allocator<SegmentTree::Node> >::_Vector_impl::_Vector_impl() [75]
+[70]     0.0    0.00    0.00       1         std::allocator<SegmentTree::Node>::allocator() [70]
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<SegmentTree::Node>::new_allocator() [62]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<SegmentTree::Node, std::allocator<SegmentTree::Node> >::_Vector_impl::~_Vector_impl() [76]
+[71]     0.0    0.00    0.00       1         std::allocator<SegmentTree::Node>::~allocator() [71]
+-----------------------------------------------
+                0.00    0.00       1/1           void std::_Destroy<SegmentTree::Node*>(SegmentTree::Node*, SegmentTree::Node*) [109]
+[72]     0.0    0.00    0.00       1         void std::_Destroy_aux<true>::__destroy<SegmentTree::Node*>(SegmentTree::Node*, SegmentTree::Node*) [72]
+-----------------------------------------------
+                0.00    0.00       1/1           void std::_Destroy<int*>(int*, int*) [111]
+[73]     0.0    0.00    0.00       1         void std::_Destroy_aux<true>::__destroy<int*>(int*, int*) [73]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<SegmentTree::Node, std::allocator<SegmentTree::Node> >::_M_default_append(unsigned long) [13]
+[74]     0.0    0.00    0.00       1         std::_Vector_base<SegmentTree::Node, std::allocator<SegmentTree::Node> >::_M_allocate(unsigned long) [74]
+                0.00    0.00       1/1           std::allocator_traits<std::allocator<SegmentTree::Node> >::allocate(std::allocator<SegmentTree::Node>&, unsigned long) [89]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<SegmentTree::Node, std::allocator<SegmentTree::Node> >::_Vector_base() [78]
+[75]     0.0    0.00    0.00       1         std::_Vector_base<SegmentTree::Node, std::allocator<SegmentTree::Node> >::_Vector_impl::_Vector_impl() [75]
+                0.00    0.00       1/1           std::allocator<SegmentTree::Node>::allocator() [70]
+                0.00    0.00       1/1           std::_Vector_base<SegmentTree::Node, std::allocator<SegmentTree::Node> >::_Vector_impl_data::_Vector_impl_data() [77]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<SegmentTree::Node, std::allocator<SegmentTree::Node> >::~_Vector_base() [79]
+[76]     0.0    0.00    0.00       1         std::_Vector_base<SegmentTree::Node, std::allocator<SegmentTree::Node> >::_Vector_impl::~_Vector_impl() [76]
+                0.00    0.00       1/1           std::allocator<SegmentTree::Node>::~allocator() [71]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<SegmentTree::Node, std::allocator<SegmentTree::Node> >::_Vector_impl::_Vector_impl() [75]
+[77]     0.0    0.00    0.00       1         std::_Vector_base<SegmentTree::Node, std::allocator<SegmentTree::Node> >::_Vector_impl_data::_Vector_impl_data() [77]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<SegmentTree::Node, std::allocator<SegmentTree::Node> >::vector() [95]
+[78]     0.0    0.00    0.00       1         std::_Vector_base<SegmentTree::Node, std::allocator<SegmentTree::Node> >::_Vector_base() [78]
+                0.00    0.00       1/1           std::_Vector_base<SegmentTree::Node, std::allocator<SegmentTree::Node> >::_Vector_impl::_Vector_impl() [75]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<SegmentTree::Node, std::allocator<SegmentTree::Node> >::~vector() [96]
+[79]     0.0    0.00    0.00       1         std::_Vector_base<SegmentTree::Node, std::allocator<SegmentTree::Node> >::~_Vector_base() [79]
+                0.00    0.00       1/2           std::_Vector_base<SegmentTree::Node, std::allocator<SegmentTree::Node> >::_M_deallocate(SegmentTree::Node*, unsigned long) [54]
+                0.00    0.00       1/1           std::_Vector_base<SegmentTree::Node, std::allocator<SegmentTree::Node> >::_Vector_impl::~_Vector_impl() [76]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<int, std::allocator<int> >::_M_create_storage(unsigned long) [84]
+[80]     0.0    0.00    0.00       1         std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) [80]
+                0.00    0.00       1/1           std::allocator_traits<std::allocator<int> >::allocate(std::allocator<int>&, unsigned long) [91]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<int, std::allocator<int> >::_Vector_base(unsigned long, std::allocator<int> const&) [86]
+[81]     0.0    0.00    0.00       1         std::_Vector_base<int, std::allocator<int> >::_Vector_impl::_Vector_impl(std::allocator<int> const&) [81]
+                0.00    0.00       1/2           std::allocator<int>::allocator(std::allocator<int> const&) [53]
+                0.00    0.00       1/1           std::_Vector_base<int, std::allocator<int> >::_Vector_impl_data::_Vector_impl_data() [85]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<int, std::allocator<int> >::~_Vector_base() [87]
+[82]     0.0    0.00    0.00       1         std::_Vector_base<int, std::allocator<int> >::_Vector_impl::~_Vector_impl() [82]
+                0.00    0.00       1/3           std::allocator<int>::~allocator() [49]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<int, std::allocator<int> >::~_Vector_base() [87]
+[83]     0.0    0.00    0.00       1         std::_Vector_base<int, std::allocator<int> >::_M_deallocate(int*, unsigned long) [83]
+                0.00    0.00       1/1           std::allocator_traits<std::allocator<int> >::deallocate(std::allocator<int>&, int*, unsigned long) [90]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<int, std::allocator<int> >::_Vector_base(unsigned long, std::allocator<int> const&) [86]
+[84]     0.0    0.00    0.00       1         std::_Vector_base<int, std::allocator<int> >::_M_create_storage(unsigned long) [84]
+                0.00    0.00       1/1           std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) [80]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<int, std::allocator<int> >::_Vector_impl::_Vector_impl(std::allocator<int> const&) [81]
+[85]     0.0    0.00    0.00       1         std::_Vector_base<int, std::allocator<int> >::_Vector_impl_data::_Vector_impl_data() [85]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<int, std::allocator<int> >::vector(unsigned long, std::allocator<int> const&) [25]
+[86]     0.0    0.00    0.00       1         std::_Vector_base<int, std::allocator<int> >::_Vector_base(unsigned long, std::allocator<int> const&) [86]
+                0.00    0.00       1/1           std::_Vector_base<int, std::allocator<int> >::_Vector_impl::_Vector_impl(std::allocator<int> const&) [81]
+                0.00    0.00       1/1           std::_Vector_base<int, std::allocator<int> >::_M_create_storage(unsigned long) [84]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<int, std::allocator<int> >::~vector() [99]
+[87]     0.0    0.00    0.00       1         std::_Vector_base<int, std::allocator<int> >::~_Vector_base() [87]
+                0.00    0.00       1/1           std::_Vector_base<int, std::allocator<int> >::_M_deallocate(int*, unsigned long) [83]
+                0.00    0.00       1/1           std::_Vector_base<int, std::allocator<int> >::_Vector_impl::~_Vector_impl() [82]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<SegmentTree::Node, std::allocator<SegmentTree::Node> >::_M_deallocate(SegmentTree::Node*, unsigned long) [54]
+[88]     0.0    0.00    0.00       1         std::allocator_traits<std::allocator<SegmentTree::Node> >::deallocate(std::allocator<SegmentTree::Node>&, SegmentTree::Node*, unsigned long) [88]
+                0.00    0.00       1/6           std::is_constant_evaluated() [43]
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<SegmentTree::Node>::deallocate(SegmentTree::Node*, unsigned long) [60]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<SegmentTree::Node, std::allocator<SegmentTree::Node> >::_M_allocate(unsigned long) [74]
+[89]     0.0    0.00    0.00       1         std::allocator_traits<std::allocator<SegmentTree::Node> >::allocate(std::allocator<SegmentTree::Node>&, unsigned long) [89]
+                0.00    0.00       1/6           std::is_constant_evaluated() [43]
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<SegmentTree::Node>::allocate(unsigned long, void const*) [61]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<int, std::allocator<int> >::_M_deallocate(int*, unsigned long) [83]
+[90]     0.0    0.00    0.00       1         std::allocator_traits<std::allocator<int> >::deallocate(std::allocator<int>&, int*, unsigned long) [90]
+                0.00    0.00       1/6           std::is_constant_evaluated() [43]
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<int>::deallocate(int*, unsigned long) [63]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) [80]
+[91]     0.0    0.00    0.00       1         std::allocator_traits<std::allocator<int> >::allocate(std::allocator<int>&, unsigned long) [91]
+                0.00    0.00       1/6           std::is_constant_evaluated() [43]
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) [64]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<int, std::allocator<int> >::_S_max_size(std::allocator<int> const&) [97]
+[92]     0.0    0.00    0.00       1         std::allocator_traits<std::allocator<int> >::max_size(std::allocator<int> const&) [92]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<SegmentTree::Node, std::allocator<SegmentTree::Node> >::_M_default_append(unsigned long) [13]
+[93]     0.0    0.00    0.00       1         std::vector<SegmentTree::Node, std::allocator<SegmentTree::Node> >::_S_relocate(SegmentTree::Node*, SegmentTree::Node*, SegmentTree::Node*, std::allocator<SegmentTree::Node>&) [93]
+                0.00    0.00       1/1           std::vector<SegmentTree::Node, std::allocator<SegmentTree::Node> >::_S_do_relocate(SegmentTree::Node*, SegmentTree::Node*, SegmentTree::Node*, std::allocator<SegmentTree::Node>&, std::integral_constant<bool, true>) [94]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<SegmentTree::Node, std::allocator<SegmentTree::Node> >::_S_relocate(SegmentTree::Node*, SegmentTree::Node*, SegmentTree::Node*, std::allocator<SegmentTree::Node>&) [93]
+[94]     0.0    0.00    0.00       1         std::vector<SegmentTree::Node, std::allocator<SegmentTree::Node> >::_S_do_relocate(SegmentTree::Node*, SegmentTree::Node*, SegmentTree::Node*, std::allocator<SegmentTree::Node>&, std::integral_constant<bool, true>) [94]
+                0.00    0.00       1/1           SegmentTree::Node* std::__relocate_a<SegmentTree::Node*, SegmentTree::Node*, std::allocator<SegmentTree::Node> >(SegmentTree::Node*, SegmentTree::Node*, SegmentTree::Node*, std::allocator<SegmentTree::Node>&) [104]
+-----------------------------------------------
+                0.00    0.00       1/1           SegmentTree::SegmentTree(std::vector<int, std::allocator<int> > const&) [10]
+[95]     0.0    0.00    0.00       1         std::vector<SegmentTree::Node, std::allocator<SegmentTree::Node> >::vector() [95]
+                0.00    0.00       1/1           std::_Vector_base<SegmentTree::Node, std::allocator<SegmentTree::Node> >::_Vector_base() [78]
+-----------------------------------------------
+                0.00    0.00       1/1           SegmentTree::~SegmentTree() [59]
+[96]     0.0    0.00    0.00       1         std::vector<SegmentTree::Node, std::allocator<SegmentTree::Node> >::~vector() [96]
+                0.00    0.00       1/3           std::_Vector_base<SegmentTree::Node, std::allocator<SegmentTree::Node> >::_M_get_Tp_allocator() [50]
+                0.00    0.00       1/1           void std::_Destroy<SegmentTree::Node*, SegmentTree::Node>(SegmentTree::Node*, SegmentTree::Node*, std::allocator<SegmentTree::Node>&) [110]
+                0.00    0.00       1/1           std::_Vector_base<SegmentTree::Node, std::allocator<SegmentTree::Node> >::~_Vector_base() [79]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<int, std::allocator<int> >::_S_check_init_len(unsigned long, std::allocator<int> const&) [98]
+[97]     0.0    0.00    0.00       1         std::vector<int, std::allocator<int> >::_S_max_size(std::allocator<int> const&) [97]
+                0.00    0.00       1/1           std::allocator_traits<std::allocator<int> >::max_size(std::allocator<int> const&) [92]
+                0.00    0.00       1/5           unsigned long const& std::min<unsigned long>(unsigned long const&, unsigned long const&) [44]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<int, std::allocator<int> >::vector(unsigned long, std::allocator<int> const&) [25]
+[98]     0.0    0.00    0.00       1         std::vector<int, std::allocator<int> >::_S_check_init_len(unsigned long, std::allocator<int> const&) [98]
+                0.00    0.00       1/2           std::allocator<int>::allocator(std::allocator<int> const&) [53]
+                0.00    0.00       1/1           std::vector<int, std::allocator<int> >::_S_max_size(std::allocator<int> const&) [97]
+                0.00    0.00       1/3           std::allocator<int>::~allocator() [49]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[99]     0.0    0.00    0.00       1         std::vector<int, std::allocator<int> >::~vector() [99]
+                0.00    0.00       1/2           std::_Vector_base<int, std::allocator<int> >::_M_get_Tp_allocator() [55]
+                0.00    0.00       1/1           std::_Vector_base<int, std::allocator<int> >::~_Vector_base() [87]
+                0.00    0.00       1/1           void std::_Destroy<int*, int>(int*, int*, std::allocator<int>&) [112]
+-----------------------------------------------
+                0.00    0.00       1/1           SegmentTree::Node* std::__uninitialized_default_n_1<true>::__uninit_default_n<SegmentTree::Node*, unsigned long>(SegmentTree::Node*, unsigned long) [12]
+[100]    0.0    0.00    0.00       1         void std::_Construct<SegmentTree::Node>(SegmentTree::Node*) [100]
+                0.00    0.00       1/2           operator new(unsigned long, void*) [57]
+-----------------------------------------------
+                0.00    0.00       1/1           int* std::__uninitialized_default_n_1<true>::__uninit_default_n<int*, unsigned long>(int*, unsigned long) [23]
+[101]    0.0    0.00    0.00       1         void std::_Construct<int>(int*) [101]
+                0.00    0.00       1/2           operator new(unsigned long, void*) [57]
+-----------------------------------------------
+                0.00    0.00       1/1           SegmentTree::Node* std::__uninitialized_default_n_1<true>::__uninit_default_n<SegmentTree::Node*, unsigned long>(SegmentTree::Node*, unsigned long) [12]
+[102]    0.0    0.00    0.00       1         SegmentTree::Node* std::__addressof<SegmentTree::Node>(SegmentTree::Node&) [102]
+-----------------------------------------------
+                0.00    0.00       1/1           int* std::__uninitialized_default_n_1<true>::__uninit_default_n<int*, unsigned long>(int*, unsigned long) [23]
+[103]    0.0    0.00    0.00       1         int* std::__addressof<int>(int&) [103]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<SegmentTree::Node, std::allocator<SegmentTree::Node> >::_S_do_relocate(SegmentTree::Node*, SegmentTree::Node*, SegmentTree::Node*, std::allocator<SegmentTree::Node>&, std::integral_constant<bool, true>) [94]
+[104]    0.0    0.00    0.00       1         SegmentTree::Node* std::__relocate_a<SegmentTree::Node*, SegmentTree::Node*, std::allocator<SegmentTree::Node> >(SegmentTree::Node*, SegmentTree::Node*, SegmentTree::Node*, std::allocator<SegmentTree::Node>&) [104]
+                0.00    0.00       3/3           SegmentTree::Node* std::__niter_base<SegmentTree::Node*>(SegmentTree::Node*) [51]
+                0.00    0.00       1/1           std::enable_if<std::__is_bitwise_relocatable<SegmentTree::Node, void>::value, SegmentTree::Node*>::type std::__relocate_a_1<SegmentTree::Node, SegmentTree::Node>(SegmentTree::Node*, SegmentTree::Node*, SegmentTree::Node*, std::allocator<SegmentTree::Node>&) [105]
+-----------------------------------------------
+                0.00    0.00       1/1           SegmentTree::Node* std::__relocate_a<SegmentTree::Node*, SegmentTree::Node*, std::allocator<SegmentTree::Node> >(SegmentTree::Node*, SegmentTree::Node*, SegmentTree::Node*, std::allocator<SegmentTree::Node>&) [104]
+[105]    0.0    0.00    0.00       1         std::enable_if<std::__is_bitwise_relocatable<SegmentTree::Node, void>::value, SegmentTree::Node*>::type std::__relocate_a_1<SegmentTree::Node, SegmentTree::Node>(SegmentTree::Node*, SegmentTree::Node*, SegmentTree::Node*, std::allocator<SegmentTree::Node>&) [105]
+-----------------------------------------------
+                0.00    0.00       1/1           SegmentTree::Node* std::fill_n<SegmentTree::Node*, unsigned long, SegmentTree::Node>(SegmentTree::Node*, unsigned long, SegmentTree::Node const&) [18]
+[106]    0.0    0.00    0.00       1         std::iterator_traits<SegmentTree::Node*>::iterator_category std::__iterator_category<SegmentTree::Node*>(SegmentTree::Node* const&) [106]
+-----------------------------------------------
+                0.00    0.00       1/1           int* std::fill_n<int*, unsigned long, int>(int*, unsigned long, int const&) [29]
+[107]    0.0    0.00    0.00       1         std::iterator_traits<int*>::iterator_category std::__iterator_category<int*>(int* const&) [107]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<SegmentTree::Node, std::allocator<SegmentTree::Node> >::_M_check_len(unsigned long, char const*) const [68]
+[108]    0.0    0.00    0.00       1         unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&) [108]
+-----------------------------------------------
+                0.00    0.00       1/1           void std::_Destroy<SegmentTree::Node*, SegmentTree::Node>(SegmentTree::Node*, SegmentTree::Node*, std::allocator<SegmentTree::Node>&) [110]
+[109]    0.0    0.00    0.00       1         void std::_Destroy<SegmentTree::Node*>(SegmentTree::Node*, SegmentTree::Node*) [109]
+                0.00    0.00       1/6           std::is_constant_evaluated() [43]
+                0.00    0.00       1/1           void std::_Destroy_aux<true>::__destroy<SegmentTree::Node*>(SegmentTree::Node*, SegmentTree::Node*) [72]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<SegmentTree::Node, std::allocator<SegmentTree::Node> >::~vector() [96]
+[110]    0.0    0.00    0.00       1         void std::_Destroy<SegmentTree::Node*, SegmentTree::Node>(SegmentTree::Node*, SegmentTree::Node*, std::allocator<SegmentTree::Node>&) [110]
+                0.00    0.00       1/1           void std::_Destroy<SegmentTree::Node*>(SegmentTree::Node*, SegmentTree::Node*) [109]
+-----------------------------------------------
+                0.00    0.00       1/1           void std::_Destroy<int*, int>(int*, int*, std::allocator<int>&) [112]
+[111]    0.0    0.00    0.00       1         void std::_Destroy<int*>(int*, int*) [111]
+                0.00    0.00       1/6           std::is_constant_evaluated() [43]
+                0.00    0.00       1/1           void std::_Destroy_aux<true>::__destroy<int*>(int*, int*) [73]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<int, std::allocator<int> >::~vector() [99]
+[112]    0.0    0.00    0.00       1         void std::_Destroy<int*, int>(int*, int*, std::allocator<int>&) [112]
+                0.00    0.00       1/1           void std::_Destroy<int*>(int*, int*) [111]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function is in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+Copyright (C) 2012-2022 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+Index by function name
+
+  [58] __static_initialization_and_destruction_0(int, int) (solution01.cpp) [75] std::_Vector_base<SegmentTree::Node, std::allocator<SegmentTree::Node> >::_Vector_impl::_Vector_impl() [99] std::vector<int, std::allocator<int> >::~vector()
+   [5] SegmentTree::GetSumEven(int, int, int, int, int) [76] std::_Vector_base<SegmentTree::Node, std::allocator<SegmentTree::Node> >::_Vector_impl::~_Vector_impl() [41] std::vector<int, std::allocator<int> >::operator[](unsigned long)
+   [3] SegmentTree::Inc(int, int, int, int, int) [54] std::_Vector_base<SegmentTree::Node, std::allocator<SegmentTree::Node> >::_M_deallocate(SegmentTree::Node*, unsigned long) [100] void std::_Construct<SegmentTree::Node>(SegmentTree::Node*)
+   [6] SegmentTree::Set(int, int, int, int, int) [77] std::_Vector_base<SegmentTree::Node, std::allocator<SegmentTree::Node> >::_Vector_impl_data::_Vector_impl_data() [101] void std::_Construct<int>(int*)
+   [9] SegmentTree::Node::Merge(SegmentTree::Node const&, SegmentTree::Node const&) [50] std::_Vector_base<SegmentTree::Node, std::allocator<SegmentTree::Node> >::_M_get_Tp_allocator() [15] SegmentTree::Node* std::__fill_n_a<SegmentTree::Node*, unsigned long, SegmentTree::Node>(SegmentTree::Node*, unsigned long, SegmentTree::Node const&, std::random_access_iterator_tag)
+  [22] SegmentTree::Node::Node(int) [78] std::_Vector_base<SegmentTree::Node, std::allocator<SegmentTree::Node> >::_Vector_base() [26] int* std::__fill_n_a<int*, unsigned long, int>(int*, unsigned long, int const&, std::random_access_iterator_tag)
+   [2] SegmentTree::Push(int, int, int) [79] std::_Vector_base<SegmentTree::Node, std::allocator<SegmentTree::Node> >::~_Vector_base() [102] SegmentTree::Node* std::__addressof<SegmentTree::Node>(SegmentTree::Node&)
+  [11] SegmentTree::swap(int&, int&) [80] std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) [103] int* std::__addressof<int>(int&)
+   [8] SegmentTree::swap(long long&, long long&) [81] std::_Vector_base<int, std::allocator<int> >::_Vector_impl::_Vector_impl(std::allocator<int> const&) [51] SegmentTree::Node* std::__niter_base<SegmentTree::Node*>(SegmentTree::Node*)
+  [21] SegmentTree::Build(std::vector<int, std::allocator<int> > const&, int, int, int) [82] std::_Vector_base<int, std::allocator<int> >::_Vector_impl::~_Vector_impl() [104] SegmentTree::Node* std::__relocate_a<SegmentTree::Node*, SegmentTree::Node*, std::allocator<SegmentTree::Node> >(SegmentTree::Node*, SegmentTree::Node*, SegmentTree::Node*, std::allocator<SegmentTree::Node>&)
+   [4] SegmentTree::GetSumOdd(int, int, int, int, int) [83] std::_Vector_base<int, std::allocator<int> >::_M_deallocate(int*, unsigned long) [105] std::enable_if<std::__is_bitwise_relocatable<SegmentTree::Node, void>::value, SegmentTree::Node*>::type std::__relocate_a_1<SegmentTree::Node, SegmentTree::Node>(SegmentTree::Node*, SegmentTree::Node*, SegmentTree::Node*, std::allocator<SegmentTree::Node>&)
+  [10] SegmentTree::SegmentTree(std::vector<int, std::allocator<int> > const&) [84] std::_Vector_base<int, std::allocator<int> >::_M_create_storage(unsigned long) [56] std::__size_to_integer(unsigned long)
+  [59] SegmentTree::~SegmentTree() [85] std::_Vector_base<int, std::allocator<int> >::_Vector_impl_data::_Vector_impl_data() [106] std::iterator_traits<SegmentTree::Node*>::iterator_category std::__iterator_category<SegmentTree::Node*>(SegmentTree::Node* const&)
+  [60] __gnu_cxx::new_allocator<SegmentTree::Node>::deallocate(SegmentTree::Node*, unsigned long) [55] std::_Vector_base<int, std::allocator<int> >::_M_get_Tp_allocator() [107] std::iterator_traits<int*>::iterator_category std::__iterator_category<int*>(int* const&)
+  [61] __gnu_cxx::new_allocator<SegmentTree::Node>::allocate(unsigned long, void const*) [86] std::_Vector_base<int, std::allocator<int> >::_Vector_base(unsigned long, std::allocator<int> const&) [43] std::is_constant_evaluated()
+  [62] __gnu_cxx::new_allocator<SegmentTree::Node>::new_allocator() [87] std::_Vector_base<int, std::allocator<int> >::~_Vector_base() [16] SegmentTree::Node* std::__uninitialized_default_n<SegmentTree::Node*, unsigned long>(SegmentTree::Node*, unsigned long)
+  [63] __gnu_cxx::new_allocator<int>::deallocate(int*, unsigned long) [88] std::allocator_traits<std::allocator<SegmentTree::Node> >::deallocate(std::allocator<SegmentTree::Node>&, SegmentTree::Node*, unsigned long) [27] int* std::__uninitialized_default_n<int*, unsigned long>(int*, unsigned long)
+  [64] __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) [89] std::allocator_traits<std::allocator<SegmentTree::Node> >::allocate(std::allocator<SegmentTree::Node>&, unsigned long) [17] SegmentTree::Node* std::__uninitialized_default_n_a<SegmentTree::Node*, unsigned long, SegmentTree::Node>(SegmentTree::Node*, unsigned long, std::allocator<SegmentTree::Node>&)
+  [65] __gnu_cxx::new_allocator<int>::new_allocator() [47] std::allocator_traits<std::allocator<SegmentTree::Node> >::max_size(std::allocator<SegmentTree::Node> const&) [28] int* std::__uninitialized_default_n_a<int*, unsigned long, int>(int*, unsigned long, std::allocator<int>&)
+  [52] __gnu_cxx::new_allocator<int>::new_allocator(__gnu_cxx::new_allocator<int> const&) [90] std::allocator_traits<std::allocator<int> >::deallocate(std::allocator<int>&, int*, unsigned long) [108] unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&)
+  [66] __gnu_cxx::new_allocator<SegmentTree::Node>::_M_max_size() const [91] std::allocator_traits<std::allocator<int> >::allocate(std::allocator<int>&, unsigned long) [44] unsigned long const& std::min<unsigned long>(unsigned long const&, unsigned long const&)
+  [67] __gnu_cxx::new_allocator<int>::_M_max_size() const [92] std::allocator_traits<std::allocator<int> >::max_size(std::allocator<int> const&) [18] SegmentTree::Node* std::fill_n<SegmentTree::Node*, unsigned long, SegmentTree::Node>(SegmentTree::Node*, unsigned long, SegmentTree::Node const&)
+  [45] std::_Vector_base<SegmentTree::Node, std::allocator<SegmentTree::Node> >::_M_get_Tp_allocator() const [12] SegmentTree::Node* std::__uninitialized_default_n_1<true>::__uninit_default_n<SegmentTree::Node*, unsigned long>(SegmentTree::Node*, unsigned long) [29] int* std::fill_n<int*, unsigned long, int>(int*, unsigned long, int const&)
+  [68] std::vector<SegmentTree::Node, std::allocator<SegmentTree::Node> >::_M_check_len(unsigned long, char const*) const [23] int* std::__uninitialized_default_n_1<true>::__uninit_default_n<int*, unsigned long>(int*, unsigned long) [109] void std::_Destroy<SegmentTree::Node*>(SegmentTree::Node*, SegmentTree::Node*)
+  [42] std::vector<SegmentTree::Node, std::allocator<SegmentTree::Node> >::size() const [48] std::vector<SegmentTree::Node, std::allocator<SegmentTree::Node> >::_S_max_size(std::allocator<SegmentTree::Node> const&) [110] void std::_Destroy<SegmentTree::Node*, SegmentTree::Node>(SegmentTree::Node*, SegmentTree::Node*, std::allocator<SegmentTree::Node>&)
+  [46] std::vector<SegmentTree::Node, std::allocator<SegmentTree::Node> >::max_size() const [93] std::vector<SegmentTree::Node, std::allocator<SegmentTree::Node> >::_S_relocate(SegmentTree::Node*, SegmentTree::Node*, SegmentTree::Node*, std::allocator<SegmentTree::Node>&) [111] void std::_Destroy<int*>(int*, int*)
+  [69] std::vector<int, std::allocator<int> >::size() const [94] std::vector<SegmentTree::Node, std::allocator<SegmentTree::Node> >::_S_do_relocate(SegmentTree::Node*, SegmentTree::Node*, SegmentTree::Node*, std::allocator<SegmentTree::Node>&, std::integral_constant<bool, true>) [112] void std::_Destroy<int*, int>(int*, int*, std::allocator<int>&)
+  [33] std::vector<int, std::allocator<int> >::operator[](unsigned long) const [13] std::vector<SegmentTree::Node, std::allocator<SegmentTree::Node> >::_M_default_append(unsigned long) [19] void std::__fill_a<SegmentTree::Node*, SegmentTree::Node>(SegmentTree::Node*, SegmentTree::Node*, SegmentTree::Node const&)
+  [70] std::allocator<SegmentTree::Node>::allocator() [14] std::vector<SegmentTree::Node, std::allocator<SegmentTree::Node> >::resize(unsigned long) [30] void std::__fill_a<int*, int>(int*, int*, int const&)
+  [71] std::allocator<SegmentTree::Node>::~allocator() [95] std::vector<SegmentTree::Node, std::allocator<SegmentTree::Node> >::vector() [20] __gnu_cxx::__enable_if<!std::__is_scalar<SegmentTree::Node>::__value, void>::__type std::__fill_a1<SegmentTree::Node*, SegmentTree::Node>(SegmentTree::Node*, SegmentTree::Node*, SegmentTree::Node const&)
+  [53] std::allocator<int>::allocator(std::allocator<int> const&) [96] std::vector<SegmentTree::Node, std::allocator<SegmentTree::Node> >::~vector() [31] __gnu_cxx::__enable_if<std::__is_scalar<int>::__value, void>::__type std::__fill_a1<int*, int>(int*, int*, int const&)
+  [34] std::allocator<int>::allocator() [7] std::vector<SegmentTree::Node, std::allocator<SegmentTree::Node> >::operator[](unsigned long) [57] operator new(unsigned long, void*)
+  [49] std::allocator<int>::~allocator() [97] std::vector<int, std::allocator<int> >::_S_max_size(std::allocator<int> const&) [32] _init
+  [72] void std::_Destroy_aux<true>::__destroy<SegmentTree::Node*>(SegmentTree::Node*, SegmentTree::Node*) [98] std::vector<int, std::allocator<int> >::_S_check_init_len(unsigned long, std::allocator<int> const&) [1] main
+  [73] void std::_Destroy_aux<true>::__destroy<int*>(int*, int*) [24] std::vector<int, std::allocator<int> >::_M_default_initialize(unsigned long)
+  [74] std::_Vector_base<SegmentTree::Node, std::allocator<SegmentTree::Node> >::_M_allocate(unsigned long) [25] std::vector<int, std::allocator<int> >::vector(unsigned long, std::allocator<int> const&)
