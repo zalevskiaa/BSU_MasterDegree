@@ -1,0 +1,78 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english, russian]{babel}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{paralist}
+\usepackage{amsthm, amsmath, amsfonts, amssymb}
+\usepackage{mathtools} % \mathclap
+\usepackage{bm}
+\usepackage{dsfont}
+\usepackage{hyperref}
+\usepackage{tabularx}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{comment}
+\usepackage{xcolor, colortbl}
+\usepackage{xifthen, xspace}
+\usepackage{caption, subcaption}
+
+\usepackage{sectsty}
+\subsectionfont{\normalsize\color{red}}
+
+\input{commands}
+
+\title{Домашнее задание №1 по курсу \\ <<Математическая Статистика в Машинном Обучении>>}
+\author{Школа Анализа Данных}
+\date{26.02.2023}
+
+% Ненумеруемое замечание
+\newtheorem*{note-none}{Замечание}
+\renewenvironment{itemize}[1]{\begin{compactitem}#1}{\end{compactitem}}
+\renewenvironment{enumerate}[1]{\begin{compactenum}#1}{\end{compactenum}}
+\renewenvironment{description}[0]{\begin{compactdesc}}{\end{compactdesc}}
+
+
+\begin{document}
+\maketitle
+
+\section*{Оценки и сходимость}
+\subsection*{Задача 1 [2 балла]}
+Пусть $\boldX = \{X_1,\ldots, X_n\} \sim \Uniform(0,\theta)$, $\esttheta = 2\mean{\boldX}$. Найдите значения значения $\bias$, $\se$ и $\MSE$ этой оценки. Является ли оценка несмещенной? Состоятельной?
+
+\subsection*{Задача 2 [3 балла]}
+Пусть $\boldX = \{X_1, \dots, X_n\} \sim \Poisson(\ln \lambda)$, $\estlambda = e^{\mean{\boldX}}$. Найдите $\bias$, $\se$ и $\MSE$ этой оценки. Является ли оценка несмещенной? Состоятельной?
+
+\section*{Эмпирическая функция распределения}
+\subsection*{Задача 3 [2 балла]}
+Пусть $\hatF(x)$ --- эмпирическая функция распределения, построенная по выборке $\boldX = \{X_1, \dots, X_n\}$. Пусть $x$, $y \in \RR$. Найдите ковариацию $\Cov(\hatF(x), \hatF(y))$.
+
+\subsection*{Задача 4 [2 балла]}
+Пусть $\boldX = \{X_1, \dots, X_n\} \sim F(x)$, и пусть $\hatF(x)$ --- эмпирическая функция распределения. Для фиксированных числе $a, b\in \RR$, таких что $a < b$ определим статистический функционал $T(F) = F(b) - F(a)$. Пусть $\esttheta = \hatF(b) - \hatF(a)$. Найдите оценку $\estSe$ стандартного отклонения и $(1-\alpha)$-доверительный интервал.
+
+\subsection*{Задача 5 [2 балла]}
+Скачайте данные о качестве красных вин. Постройте график для $\hatF(x;\boldX)$ для уровня кислотности (pH). Для каждой точки $x$ постройте:
+\begin{itemize}
+	\item 95\%-ый доверительный интервал на основе неравенства Дворецкого-Кифера-Вольфовица.
+	\item Асимптотический нормальный 95\%-ый доверительный интервал для значения $F(x)$.
+\end{itemize}
+По значениям уровня кислотности $\boldX$ подсчитайте оценку $T(\boldX)$ для функционала $T(F) = F(3.5) - F(3.4)$ и найдите оцените аналитически стандартное отклонение $\estSe$ оценки $T(\boldX)$. Постройте асимптотический нормальный 95\%-ый доверительный интервал для $T(F)$.
+
+\subsection*{Задача 6 [2 балла]}
+В процессе очистки питьевой воды выпадает значительный осадок. Для его уменьшения можно воздействовать на разные факторы,
+в т.ч. на количество микроорганизмов в жидкости, способствующих окислению органики. В группу из $261$ очистительных установок
+был добавлен реагент, подавляющих активность микроорганизмов, а состав остальных $119$ остался без изменений.
+Пусть $\theta$ --- разность в средних значениях количества твердых частиц в этих двух группах установок.
+Оценить по данным \texttt{WaterTreatment} величину $\theta$, оценить стандартную ошибку оценки, построить
+$95\%$ и $99\%$ доверительные интервалы. Какие выводы можно сделать на основе полученных результатов?
+
+\section*{Бутстреп}
+\subsection*{Задача 7 [2 балла]}
+Провести моделирование, чтобы сравнить различные типы доверительных интервалов, построенных с помощью бутстрепа. Пусть $n = 50$, $T(F) = {\int\lp x-\mu\rp^3dF(x)} / \sigma^{3}$ --- коэффициент асимметрии, где $F$ --- распределение $\chi_k^2$ с тремя степенями свободы ($k = 3$). Постройте 95\% доверительные интервалы для $T(F)$ по выборке $\boldX = \{X_1,\ldots,X_n\}$, используя три подхода на основе бутстрепа.
+	
+\subsection*{Задача 8 [3 балла]}
+Пусть $\boldX = \{X_1,\ldots, X_n\} \sim \Exponential(\lambda)$, $\theta = e^{\frac{1}{\lambda}}$ и $\esttheta = e^{\mean{\boldX}}$. Найдите аналитически плотность распределения $p_{\esttheta}(x)$ оценки $\esttheta = e^{\mean{\boldX}}$, математическое ожидание $\Exp(\esttheta)$,  и дисперсию $\Var(\esttheta)$, а также $\bias$, $\se$, $\MSE$ оценки $\esttheta$. Является ли оценка $\esttheta$ смещенной? Состоятельной?
+
+\subsection*{Задача 9 [2 балла]}
+Пусть $\boldX = \{X_1,\ldots, X_n\} \sim \Exponential(\lambda)$, $\theta = e^{\frac{1}{\lambda}}$ и $\esttheta = e^{\mean{\boldX}}$. Сгенерируйте выборку $\boldX$ из $n = 1000$ наблюдений для $\lambda = 0.25$. Нарисуйте гистограмму значений $\{\esttheta^*_i\}_{i=1}^B$ бутстрепных оценок. Эта гистограмма является оценкой распределения $p_{\esttheta}(x)$. Сравните ее с настоящим распределением $p_{\esttheta}(x)$, вычисленным аналитически в предыдущем пункте. Используя бутстреп, подсчитайте величину $\se$ и постройте тремя способами $95\%$-ый доверительный интервал для $\theta$. 
+
+\end{document}
